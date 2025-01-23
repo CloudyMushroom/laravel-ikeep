@@ -1,10 +1,10 @@
 <div>       
-    <livewire:nav />
 
+    <livewire:nav />
     @if ($testVariable)    
         <livewire:account />    
     @endif
-    
+
     
 
 </div>

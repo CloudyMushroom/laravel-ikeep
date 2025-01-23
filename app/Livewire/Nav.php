@@ -10,8 +10,7 @@ class Nav extends Component
 {
     public function toggleComponent()
     {
-        $this->dispatch('toggleAccountComponent');
-       
+        $this->dispatch('toggleAccountComponent')->to('Navmanager');       
     }
 
     public function render()

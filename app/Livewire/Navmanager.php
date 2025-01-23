@@ -2,24 +2,21 @@
 
 namespace App\Livewire;
 use Livewire\Component;
-
+use Livewire\Attributes\On; 
 class Navmanager extends Component
 {
     public $testVariable = false;
 
     protected $listeners = ['toggleAccountComponent'];
-
+    //#[On('toggleAccountComponent')] same function above
     public function toggleAccountComponent()
     {
-        $this->toggleComponent();
+        $this->testVariable = !$this->testVariable;
     }
 
 
     // it is possible to remove this toggleComponent function and just put the content inside the toggleAccountComponent
-    public function toggleComponent()
-    {
-        $this->testVariable = !$this->testVariable;
-    }
+  
 
     public function render()
     {
