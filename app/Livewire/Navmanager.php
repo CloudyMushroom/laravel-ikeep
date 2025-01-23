@@ -5,18 +5,28 @@ use Livewire\Component;
 use Livewire\Attributes\On; 
 class Navmanager extends Component
 {
-    public $testVariable = false;
-
-    protected $listeners = ['toggleAccountComponent'];
+    public $toggleAccountPage = false;
+    public $toggleAboutPage = false;
+    // protected $listeners = ['toggleAccountComponent'];
     //#[On('toggleAccountComponent')] same function above
-    public function toggleAccountComponent()
+    public function toggleAccount()
     {
-        $this->testVariable = !$this->testVariable;
+        $this->toggleAccountPage = !$this->toggleAccountPage;
     }
+    
+    public function toggleAbout()
+    {
+        $this->toggleAboutPage = !$this->toggleAboutPage;
+    }
+
 
 
     // it is possible to remove this toggleComponent function and just put the content inside the toggleAccountComponent
   
+    public function mount()
+    {
+
+    }
 
     public function render()
     {

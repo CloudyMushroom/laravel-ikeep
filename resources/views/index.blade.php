@@ -11,7 +11,7 @@
 </head>
 <body>    
     <livewire:navmanager />
-
+    <livewire:account />
 
     
     
