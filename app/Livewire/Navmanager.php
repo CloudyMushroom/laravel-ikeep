@@ -36,6 +36,7 @@ class Navmanager extends Component
         {
             $this->activeComponent = $component; // else it will be visible based sa sent params/props kay togglecomponent and if else variable na activecomponent sa component
         }
+        
     }
 
 

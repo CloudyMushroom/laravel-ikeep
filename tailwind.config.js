@@ -4,6 +4,7 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/views/livewire/*.blade.php", // JSTAR: added this directory to apply tailwindcss    
+    "./resources/views/components/layouts/*.blade.php", // JSTAR: added this directory to apply tailwindcss    
     "./resources/**/*.vue"
     
   ],
