@@ -1,5 +1,5 @@
 <div class="flex justify-center">
-    <div class = "sm:w-2/3 sm:mx-0 m-5 mx-10 my-10 p-8  shadow-md border rounded-md text-center">
+    <div class = "sm:w-3/6 sm:mx-0 m-5 mx-10 my-10 p-8 border shadow-lg rounded-md text-center">
         <h1 class="font-bold mb-5">ACCOUNT</h1>       
         <form action="/accountadd" method="POST" class="flex justify-center flex-col">
             @csrf
@@ -11,7 +11,7 @@
 
             <input 
                 name="decrypt_PIN"
-                class="font-semibold border px-1 py-2 mx-1 my-2"
+                class="font-semibold border p-1 mx-1 my-2"
                 type="text">
             
             <label 
@@ -22,12 +22,12 @@
 
             <input 
                 name="seed_PHRASE"
-                class="font-semibold border px-1 py-2 mx-1 my-2"
+                class="font-semibold border p-1 mx-1 my-2"
                 type="text">
             
              <div class="flex justify-center">
                 <input 
-                class="font-semibold text-white w-1/2 mx-1 mt-4 py-2 cursor-pointer hover:bg-sky-400 bg-sky-500 rounded-lg"
+                class="font-semibold text-white w-1/2 mx-1 mt-4 py-2 cursor-pointer hover:bg-sky-400 bg-cyan-500 rounded-lg"
                 type="submit" 
                 value="SUBMIT">
              </div>

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ikeepusercontroller extends Controller
 {
-    #temoporary only....
+    #temoporary only to insert data....
     public function StoreData(Request $request)
     {
         $validateData = $request->validate([
@@ -16,6 +16,6 @@ class ikeepusercontroller extends Controller
         
         ikeepuser::create($validateData);
 
-        return 'success';
+        return redirect()->to('/');
     }
 }
