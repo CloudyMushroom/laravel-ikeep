@@ -1,5 +1,5 @@
 <div class="flex justify-center">
-    <div class = "sm:w-3/6 sm:mx-0 m-5 mx-10 my-10 p-8 border shadow-lg rounded-md text-center">
+    <div class = "sm:w-3/6  lg:w-2/4 xl:w-1/3 sm:mx-0 m-5 my-10 p-8 border shadow-lg rounded-md text-center">
         <h1 class="font-bold mb-5">ACCOUNT</h1>       
         <form action="/accountadd" method="POST" class="flex justify-center flex-col">
             @csrf

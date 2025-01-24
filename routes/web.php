@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\ikeepuser;
 use App\Livewire\Account;
 use App\Livewire\Login;
+use App\Livewire\About;
 
 
 /* Route::get('/account', function () {
@@ -16,6 +17,7 @@ use App\Livewire\Login;
 
 Route::get('/', Login::class);
 Route::get('/account', Account::class);
+Route::get('/about', About::class);
 
 
 Route::post('/accountadd', [ikeepusercontroller::class, 'StoreData']);
